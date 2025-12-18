@@ -23,7 +23,7 @@ const SliderVideo = ({ src, isActive }) => {
       loop
       playsInline
       preload="metadata"
-      controls={false}
+      controls
       style={{
         width: "100%",
         height: "100%",
