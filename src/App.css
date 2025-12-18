@@ -1,0 +1,7 @@
+
+@tailwind utilities;
+
+@font-face{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  src: url(./assets/fonts/ITC\ Franklin\ Gothic\ LT\ Medium.otf);
+}
