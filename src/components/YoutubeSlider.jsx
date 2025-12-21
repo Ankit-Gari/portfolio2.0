@@ -1,10 +1,10 @@
 import React from "react";
 import Slider from "react-slick";
-import YoutubeEmbed from "./YoutubeEmbed";
+import YouTubeEmbed from "./YouTubeEmbed";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const YoutubeSlider = ({ YtWork = [] }) => {
+const YoutubeSlider = ({ YtWork = [], aspect = "16/9" }) => {
   const settings = {
     dots: false,
     infinite: true,
@@ -12,18 +12,9 @@ const YoutubeSlider = ({ YtWork = [] }) => {
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
-      {
-        breakpoint: 1100,
-        settings: { slidesToShow: 2 },
-      },
-      {
-        breakpoint: 768,
-        settings: { slidesToShow: 2 },
-      },
-      {
-        breakpoint: 500,
-        settings: { slidesToShow: 1 },
-      },
+      { breakpoint: 1100, settings: { slidesToShow: 2 } },
+      { breakpoint: 768, settings: { slidesToShow: 2 } },
+      { breakpoint: 500, settings: { slidesToShow: 1 } },
     ],
   };
 
@@ -32,11 +23,16 @@ const YoutubeSlider = ({ YtWork = [] }) => {
   }
 
   return (
-    <div className="w-full overfl px-4">
+    <div className="w-full px-4">
       <Slider {...settings}>
         {YtWork.map((ytId, idx) => (
           <div key={idx} className="px-[1vw]">
-            <YoutubeEmbed yt={ytId} />
+            {/* ✅ CORRECT PROP */}
+            <YouTubeEmbed
+              videoId={ytId}
+              aspect={aspect}
+            />
+
           </div>
         ))}
       </Slider>

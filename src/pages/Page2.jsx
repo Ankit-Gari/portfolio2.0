@@ -1,6 +1,8 @@
 import React from 'react'
 import Gap from '../components/Gap'
 import Main from '../components/Main'
+import YouTubeEmbed from "../components/YouTubeEmbed";
+
 
 const Page2 = () => {
     return (
@@ -20,7 +22,12 @@ const Page2 = () => {
                             deadlines.</p>
                     </div>
                     <div className='lg:w-[65%] flex flex-col gap-y-[20px] text-end  '>
-                        <video autoPlay muted controls controlsList="nodownload  nofullscreen" disablePictureInPicture playsInline src="https://res.cloudinary.com/dstbotumc/video/upload/v1766083739/deadline_xooudu.mp4"></video>
+                        <YouTubeEmbed
+                            videoId="9tmlDoxkaQk"
+                            aspect="16/9"
+                        />
+                        
+
                         {/* <p className='uppercase text-[15.6px]'>the art of meeting deadlines</p> */}
                     </div>
                 </div>

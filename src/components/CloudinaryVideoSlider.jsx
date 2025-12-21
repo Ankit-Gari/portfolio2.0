@@ -3,9 +3,9 @@ import Slider from "react-slick";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import SliderVideo from "./sliderVideo";
+import YouTubeEmbed from "./YouTubeEmbed";
 
-const CloudinaryVideoSlider = ({ videos = [] }) => {
+const CloudinaryVideoSlider = ({ videos = [], aspect = "9/16" }) => {
   const [activeSlide, setActiveSlide] = useState(0);
 
   const settings = {
@@ -27,13 +27,13 @@ const CloudinaryVideoSlider = ({ videos = [] }) => {
   }
 
   return (
-    <div className="w-full overfl px-4">
+    <div className="w-full px-4">
       <Slider {...settings}>
-        {videos.map((url, idx) => (
+        {videos.map((videoId, idx) => (
           <div key={idx} className="px-[1vw]">
-            <SliderVideo
-              src={url}
-              isActive={idx === (activeSlide % videos.length)}
+            <YouTubeEmbed
+              videoId={videoId}
+              aspect={aspect}
             />
           </div>
         ))}

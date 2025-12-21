@@ -1,6 +1,7 @@
 import React from "react";
 import Main from "../components/Main";
 import Gap from "../components/Gap";
+import YouTubeEmbed from "../components/YouTubeEmbed";
 
 const Page7 = () => {
   return (
@@ -14,7 +15,7 @@ const Page7 = () => {
             The Challenge – 21 Days
           </h1>
 
-          {/* Horizontal Swiper */}
+          {/* Horizontal Scroll (UNCHANGED) */}
           <div
             className="
               flex gap-6
@@ -29,22 +30,19 @@ const Page7 = () => {
             <Card
               title="Maggie Edit"
               subtitle="Following the Trend"
-              video="https://res.cloudinary.com/dstbotumc/video/upload/v1766083724/meggie_cjgk9b.mp4"
-              // desc="Made entirely on Premiere Pro with speed ramping and masking."
+              videoId="4XxA4XtJHKY"
             />
 
             <Card
               title="Challenge"
               subtitle="The 21 Days"
-              video="https://res.cloudinary.com/dstbotumc/video/upload/v1766083735/21day_ej8jc4.mp4"
-              // desc="A continuous 21-day creative editing challenge."
+              videoId="XjZeK3ZSeaw"
             />
 
             <Card
               title="The Best Phone"
               subtitle="Phone Edit"
-              video="https://res.cloudinary.com/dstbotumc/video/upload/v1766083721/dualankit_posgzh.mp4"
-              // desc="Created using Premiere Pro & After Effects."
+              videoId="FaDr_jKRZPc"
             />
           </div>
 
@@ -54,7 +52,7 @@ const Page7 = () => {
   );
 };
 
-const Card = ({ title, subtitle, video, desc }) => {
+const Card = ({ title, subtitle, videoId, desc }) => {
   return (
     <div
       className="
@@ -65,23 +63,21 @@ const Card = ({ title, subtitle, video, desc }) => {
         flex flex-col gap-4
       "
     >
+      {/* Text */}
       <div>
         <p className="text-[18px] opacity-80">{subtitle}</p>
         <p className="text-[26px] font-bold">{title}</p>
       </div>
 
+      {/* Video */}
       <div className="aspect-video overflow-hidden rounded-md">
-        <video
-          controls src={video}
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="w-full h-full object-cover"
+        <YouTubeEmbed
+          videoId={videoId}
+          aspect="16/9"
         />
       </div>
 
-      <p className="text-[16px] opacity-90">{desc}</p>
+      {desc && <p className="text-[16px] opacity-90">{desc}</p>}
     </div>
   );
 };

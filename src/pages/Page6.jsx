@@ -4,12 +4,12 @@ import Gap from "../components/Gap";
 import CloudinaryVideoSlider from "../components/CloudinaryVideoSlider";
 
 const Page6 = () => {
-  const cloudinaryVideos = [
-    "https://res.cloudinary.com/dstbotumc/video/upload/v1766083731/pew_pew_vwp5a3.mp4",
-    "https://res.cloudinary.com/dstbotumc/video/upload/v1766083760/NW1_ufgkyo.mp4",
-    "https://res.cloudinary.com/dstbotumc/video/upload/v1766083755/SpitiFin_dffdkf.mp4",
-    "https://res.cloudinary.com/dstbotumc/video/upload/v1766083741/NW2_gzwkir.mp4",
-    "https://res.cloudinary.com/dstbotumc/video/upload/v1766083723/error_jcue9w.mp4"
+  const youtubeVideos = [
+    "27idTae3pVQ",
+    "QOnQFL3uMF4",
+    "5D0nvbuNFpk",
+    "H_nDywL5LI8",
+    "PyfmiShHd84",
   ];
 
   return (
@@ -17,7 +17,6 @@ const Page6 = () => {
       <Gap />
       <Main>
         <div className="w-full max-w-[1280px] mx-auto px-4">
-
           {/* Heading */}
           <div className="mb-10">
             <h2 className="text-[40px] md:text-[60px] xl:text-[70px] font-bold">
@@ -25,9 +24,8 @@ const Page6 = () => {
             </h2>
           </div>
 
-          {/* Slider (same as Page9) */}
-          <CloudinaryVideoSlider videos={cloudinaryVideos} />
-
+          {/* SAME slider component */}
+          <CloudinaryVideoSlider videos={youtubeVideos} aspect="9/16" />
         </div>
       </Main>
     </>

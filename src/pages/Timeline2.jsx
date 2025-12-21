@@ -1,4 +1,6 @@
 import React from "react";
+import YouTubeEmbed from "../components/YouTubeEmbed";
+
 
 const Timeline = () => {
   return (
@@ -22,17 +24,10 @@ const Timeline = () => {
           {/* Left: Vertical video (phone style) */}
           <div className="w-full lg:w-[300px] flex justify-center">
             <div className="aspect-[9/16] w-[800px] rounded-lg overflow-hidden bg-black">
-              <video
-                className="w-full h-full"
-                src="https://res.cloudinary.com/dstbotumc/video/upload/v1766083744/timeline_ngqoot.mp4" // replace with your video URL
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                controls
-                autoPlay
-                muted
-              />
+              <YouTubeEmbed
+                  videoId="QQNOtFyOlI8"
+                  aspect="9/16"
+                />
             </div>
           </div>
 

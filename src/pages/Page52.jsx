@@ -1,6 +1,8 @@
 import React from 'react';
 import Main from '../components/Main';
 import Gap from '../components/Gap';
+import YouTubeEmbed from "../components/YouTubeEmbed";
+
 
 const Page5 = () => {
   return (
@@ -12,28 +14,22 @@ const Page5 = () => {
             <div className=' w-full flex flex-col  items-center'>
               <h4 className="sm:text-[60px] text-[10vw] font-bold">After Effect Edit</h4>
               <div className="w-full max-w-[1080px] aspect-video mt-8">
-                <iframe
-                  className="w-full h-full"
-                  src="https://www.youtube.com/embed/u5Wp_TuZPG0?si=d-wUFxdxhw528E-X" // replace with your video URL
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                ></iframe>
+                <YouTubeEmbed
+                  videoId="u5Wp_TuZPG0"
+                  aspect="16/9"
+                />
+
+
               </div>
             </div>
           </div>
           <Gap />
           <div className='w-full flex flex-col  items-center'>
             <div className="w-full max-w-[1080px] aspect-video mt-8">
-              <iframe
-                  className="w-full h-full"
-                  src="https://www.youtube.com/embed/qbgVO-2yM7w" // replace with your video URL
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                ></iframe>
+              <YouTubeEmbed
+                videoId="qbgVO-2yM7w"
+                aspect="16/9"
+              />
             </div>
           </div>
         </div>
