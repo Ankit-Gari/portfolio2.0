@@ -16,6 +16,7 @@ import Page9 from './pages/Page9'
 import Page10 from './pages/Page10'
 import Timeline2 from "./pages/Timeline2";
 import { Timeline } from 'gsap/gsap-core'
+import PageLongForm from './pages/PageLongForm'
 
 const App = () => {
   return (
@@ -25,9 +26,10 @@ const App = () => {
       <Page1/>
       <Page2/>
       <Page3/>
-      <Page52/>
-      <Page6/>
-      <Page51/>
+      {/* <Page52/> */}
+      <PageLongForm/>
+      {/* <Page6/> */}
+      {/* <Page51/> */}
       <Page41/>
       <Timeline2/>
       <Page42/>
