@@ -26,10 +26,10 @@ const App = () => {
       <Page1/>
       <Page2/>
       <Page3/>
-      {/* <Page52/> */}
+      <Page52/>
       <PageLongForm/>
-      {/* <Page6/> */}
-      {/* <Page51/> */}
+      <Page6/>
+      <Page51/>
       <Page41/>
       <Timeline2/>
       <Page42/>
