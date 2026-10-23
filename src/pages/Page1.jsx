@@ -35,11 +35,11 @@ const Page1 = () => {
                             <p className='uppercase text-[1vw] lg:text-[17px] pt-[20px]'>your next Video Editor</p>
                             <h3 className='font-bold tracking-tight text-[7vw] lg:text-[70px]'>Ankit Gari.</h3>
                             <div
-                                className='flex gap-[10px] items-center justify-center absolute right-[20px] bottom-[5%] cursor-pointer'
+                                className='flex gap-[10px] items-center justify-center absolute right-[20px] bottom-[5%] cursor-pointer bg-white text-[#242424] rounded-full px-[2vw] py-[0.6vw] lg:px-[30px] lg:py-[8px] hover:bg-[#DAD1D1] transition-colors'
                                 onClick={scrollToPage10}
                             >
-                                <p className='lg:text-[35px] text-[1vw]'>Contact Me</p>
-                                <p className='lg:text-[50px] text-[5vw]'>↓</p>
+                                <p className='lg:text-[28px] text-[1vw] font-medium'>Contact Me</p>
+                                <p className='lg:text-[32px] text-[2vw]'>↓</p>
                             </div>
                         </div>
                     </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import Main from '../components/Main';
 import Gap from '../components/Gap';
 import YouTubeEmbed from "../components/YouTubeEmbed";
+import YoutubeLongForm from "../components/YoutubeLongForm";
 
 
 const Page5 = () => {
@@ -17,9 +18,9 @@ const Page5 = () => {
       <Main>
         <div className="w-full max-w-[1280px] mx-auto px-4">
 
-          <div className="mb-8">
+          <div id="page52" className="mb-8">
             <h3 className="text-[40px] md:text-[60px] xl:text-[70px] tracking-tight font-bold text-center">
-              After Effect Edit
+              After Effect Edits
             </h3>
           </div>
 
@@ -35,38 +36,6 @@ const Page5 = () => {
       </Main>
     </>
   );
-
-//   return (
-//     <>
-//       <Gap />
-//       <Main>
-//         <div className="w-full">
-//           <div className="w-full max-w-[1280px] mx-auto px-4 ">
-//             <div className=' w-full flex flex-col  items-center'>
-//               <h4 className="sm:text-[60px] text-[10vw] font-bold">After Effect Edit</h4>
-//               <div className="w-full max-w-[1080px] aspect-video mt-8">
-//                 <YouTubeEmbed
-//                   videoId="u5Wp_TuZPG0"
-//                   aspect="16/9"
-//                 />
-
-
-//               </div>
-//             </div>
-//           </div>
-//           <Gap />
-//           <div className='w-full flex flex-col  items-center'>
-//             <div className="w-full max-w-[1080px] aspect-video mt-8">
-//               <YouTubeEmbed
-//                 videoId="qbgVO-2yM7w"
-//                 aspect="16/9"
-//               />
-//             </div>
-//           </div>
-//         </div>
-//       </Main>
-//     </>
-//   );
 };
 
 export default Page5;

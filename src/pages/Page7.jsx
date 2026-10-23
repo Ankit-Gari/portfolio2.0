@@ -12,7 +12,7 @@ const Page7 = () => {
 
           {/* Title */}
           <h1 className="text-[8vw] sm:text-[120px] tracking-tight font-extrabold text-center mb-10">
-            The Challenge – 21 Days
+            Personal Creative Projects
           </h1>
 
           {/* Horizontal Scroll (UNCHANGED) */}
@@ -28,21 +28,21 @@ const Page7 = () => {
             "
           >
             <Card
+              title="2D or 3D?"
+              subtitle="Illusion"
+              videoId="8E-qHTqHFek"
+            />
+
+            <Card
               title="Maggie Edit"
               subtitle="Following the Trend"
               videoId="4XxA4XtJHKY"
             />
 
             <Card
-              title="Challenge"
-              subtitle="The 21 Days"
-              videoId="XjZeK3ZSeaw"
-            />
-
-            <Card
-              title="The Best Phone"
-              subtitle="Phone Edit"
-              videoId="FaDr_jKRZPc"
+              title="The 3D World"
+              subtitle="Illusion but better"
+              videoId="AgNI0zpcHAo"
             />
           </div>
 

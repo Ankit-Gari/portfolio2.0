@@ -17,6 +17,9 @@ import Page10 from './pages/Page10'
 import Timeline2 from "./pages/Timeline2";
 import { Timeline } from 'gsap/gsap-core'
 import PageLongForm from './pages/PageLongForm'
+import PageAdxiaomi from './pages/PageAdxiaomi'
+import PageIntroJOAT from './pages/PageIntroJOAT'
+import PageReels from './pages/PageReels'
 
 const App = () => {
   return (
@@ -24,17 +27,20 @@ const App = () => {
     <div className='flex flex-col items-center'>
       
       <Page1/>
-      <Page2/>
-      <Page3/>
+      <PageIntroJOAT/>
+      {/* <Page2/> */}
+      {/* <Page3/> */}
       <Page52/>
-      <PageLongForm/>
       <Page6/>
-      <Page51/>
+      <PageLongForm/>
       <Page41/>
       <Timeline2/>
       <Page42/>
+      <Page51/>
+      <PageAdxiaomi/>
       <Page7/>
-      <Page8/>
+      {/* <Page8/> */}
+      <PageReels/>
       <Page9/>
       <Page10/>
     </div>
