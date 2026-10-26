@@ -7,9 +7,8 @@ import YoutubeLongForm from "../components/YoutubeLongForm";
 const PageLongForm = () => {
   // VFX / Shorts videos (YouTube IDs)
   const YtWork = [
-    "u5Wp_TuZPG0",
+    "DQm8uicCdmk",
     "a_irPmKhcaQ",
-    "I-LcPo8B2x0",
     "izSFo5QnxUI",
   ];
 
